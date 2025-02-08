@@ -1,15 +1,68 @@
 /* Folhas de estilo*/
+
+#wrap {
+    position: relative;
+    height: 100%;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+}
+
 header {
     display: flex;
-    color: green;
-    flex-direction: column;
-    text-align: center;
+    color: rgb(47, 179, 255);
+    align-items: center;
+    background-color:rgb(12, 255, 12);
     
+
 }
 
 header img {
-   
-    width: 350px;
-    
 
+    width: 64px;
+    display: block;
+    height: auto;
+    margin-right: 25px
+    
+}
+header h1{
+flex-wrap: wrap;
+
+}
+body {
+ 
+    background: white;
+    background-size: cover;
+    background-attachment: fixed;
+    
+}
+
+
+ nav{
+    background: rgb(47, 179, 255);
+    display: flex;
+    flex-direction: row; /* Alinha os itens horizontalmente */
+    align-items: center;
+    justify-content: space-around; /* Distribui os itens */
+    padding: 1rem;
+    color: white;
+    margin-top: .5rem;
+}
+
+ nav a{
+    display: block; /* Mantém os itens de navegação alinhados corretamente */
+    padding: 1rem;
+    text-decoration: none;
+    color: white;
+}
+
+
+footer {
+    background: rgb(47, 179, 255);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: #fff;
 }

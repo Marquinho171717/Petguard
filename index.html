@@ -1,94 +1,168 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+<!-- Define o tipo de documento HTML e define a linguagem como português do Brasil -->
 
 <head>
+    <!-- Meta tags essenciais para definição de charset e viewport -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Link para o arquivo de estilos CSS personalizado -->
     <link rel="stylesheet" href="css/styles.css">
+    <!-- Favicon do site -->
     <link rel="shortcut icon" href="img/logoo.png">
+    <!-- Link para a biblioteca de ícones FontAwesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <!-- Componentes do Bootstrap -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/css/bootstrap.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/js/bootstrap.bundle.min.js"></script>
+    <!-- Título da página -->
     <title>PetGuard</title>
 </head>
 
 <body>
+    <!-- Contêiner principal que engloba todo o conteúdo da página -->
     <div id="wrap">
+        <!-- Cabeçalho do site -->
         <header>
+            <!-- Link para a página inicial com a logo -->
             <a href="index.html">
                 <img src="img/logoo.png" alt="logo">
             </a>
             <h1>PetGuard</h1>
-            
-            
         </header>
 
-        <nav>
-            <a href="/" title="Cachorro">
-                <span>Cachorro</span>
-            </a>
-            <a href="Gato" title="Gato">
-                <span>Gato</span>
-            </a>
-            <a href="Passaro" title="Passaro">
-                <span>Passaro</span>
-            </a>
-            <a href="Peixe" title="Peixe">
-                <span>Peixe</span>
-            </a>
-            <a href="Outros pets" title="Outros Pets">
-                <span>Outros Pets</span>
-            </a>
-            <a href="promoções" title="promoções">
-                <span>Promoções</span>
-            </a>
-            <a href="Serviços" title="Serviços">
-                <span>Serviços</span>
-            </a>
-            <!-- Ícone do carrinho de compras -->
-            <a href="carrinho.html" title="Carrinho">
-                <i class="fa fa-shopping-cart"></i>
-                <span>Carrinho</span>
-            </a>
+        <!-- Barra de navegação principal com Bootstrap -->
+        <nav class="navbar navbar-expand-sm bg-info navbar-dark">
+            <div class="container-fluid">
+                <!-- Botão para colapsar o menu em telas menores -->
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapsibleNavbar">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                    <!-- Links de navegação -->
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">INICIO</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">CACHORRO</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">GATO</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">PEIXE</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">AVES E PASSAROS</a>
+                        </li>
+                        <!-- Menu dropdown para opções adicionais -->
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button"
+                                data-bs-toggle="dropdown">SERVIÇOS</a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">BANHO</a></li>
+                                <li><a class="dropdown-item" href="#">FISIOTERAPIA</a></li>
+                                <li><a class="dropdown-item" href="#">HOSPEDAGEM</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
         </nav>
 
         <main>
-            <article>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis temporibus odit in obcaecati eveniet
-                minima sint reiciendis! Maxime, iure sequi eum quasi nobis, facere doloribus deserunt mollitia
-                asperiores corporis qui?
-            </article>
-            <aside>
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Libero iure nostrum.
-            </aside>
+            <!-- Carousel com Bootstrap -->
+            <div id="demo" class="carousel slide" data-bs-ride="carousel">
+                <!-- Indicadores/dots do carousel -->
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active"></button>
+                    <button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button>
+                    <button type="button" data-bs-target="#demo" data-bs-slide-to="2"></button>
+                </div>
+
+                <!-- Slides do carousel -->
+                <div id="rolofoto" class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="./img/imagem1.png" alt="Los Angeles" class="d-block w-100">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="./img/imagem2.png" alt="Chicago" class="d-block w-100">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="img/imagem3.png" alt="New York" class="d-block w-100">
+                    </div>
+                </div>
+
+                <!-- Controles de navegação do carousel -->
+                <button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon"></span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next">
+                    <span class="carousel-control-next-icon"></span>
+                </button>
+            </div>
         </main>
 
-        <footer>
-            <div class="footer-andar-1">
+        <!-- Rodapé do site -->
+        <footer class="text-bg-info">
+            <!-- Primeiro andar do rodapé - Licença -->
+            <div class="footer-andar-1 d-flex justify-content-between">
+                <!-- Link para a página inicial -->
                 <a href="index.html">
                     <i class="fa-solid fa-house"></i>
                 </a>
-                <div>&copy; Copyright 2025 Petguard</div>
+                <!-- Direitos autorais -->
+                <div>&copy; Copyright 2025 PetGuard</div>
+                <!-- Link para o topo da página -->
                 <a href="#wrap">
                     <i class="fa-solid fa-circle-up"></i>
                 </a>
             </div>
-            <div class="footer-andar-2"></div>
-            <nav>
-                <ul>
-                    <li><a href="https://facebook.com/petiteguarda" target="_blank">
-                        <i class="fa-brands fa-square-facebook"></i> Facebook
-                    </a></li>
-                    <li><a href="https://instagram.com/petiteguarda" target="_blank">
-                        <i class="fa-brands fa-square-instagram"></i> Instagram
-                    </a></li>
-                    <li><a href="https://youtube.com/petiteguarda" target="_blank">
-                        <i class="fa-brands fa-square-youtube"></i> Youtube
-                    </a></li>
-                    <li><a href="https://ws.com/petiteguarda" target="_blank">
-                        <i class="fa-brands fa-square-whatsapp"></i> Whatsapp
-                    </a></li>
-                </ul>
-             </nav>
-        </footer>
+            <!-- Segundo andar do rodapé - Links -->
+            <div class="footer-andar-2 container">
+                <div class="row">
+                    <!-- Menu com nossas redes sociais -->
+                    <nav class="col-md-6 text-bg-info">
+                        <ul class="list-inline">
+                            <li class="list-inline-item"><a href="https://facebook.com/petiteguarda" target="_blank">
+                                    <i class="fa-brands fa-square-facebook"></i> Facebook
+                                </a></li>
+                            <li class="list-inline-item"><a href="https://instagram.com/petiteguarda" target="_blank">
+                                    <i class="fa-brands fa-square-instagram"></i> Instagram
+                                </a></li>
+                            <li class="list-inline-item"><a href="https://youtube.com/petiteguarda" target="_blank">
+                                    <i class="fa-brands fa-square-youtube"></i> Youtube
+                                </a></li>
+                            <li class="list-inline-item"><a href="https://ws.com/petiteguarda" target="_blank">
+                                    <i class="fa-brands fa-square-whatsapp"></i> Whatsapp
+                                </a></li>
+                        </ul>
+                    </nav>
+
+                    <!-- Menu com links importantes -->
+                    <nav class="col-md-6 text-bg-info">
+                        <ul class="list-inline">
+                            <li class="list-inline-item"><a href="contatos.html">
+                                    <i class="fa-solid fa-message"></i> Faça contato
+                                </a></li>
+                            <li class="list-inline-item"><a href="sobre.html">
+                                    <i class="fa-solid fa-circle-info"></i> Sobre
+                                </a></li>
+                            <li class="list-inline-item"><a href="privacidade.html">
+                                    <i class="fa-solid fa-lock"></i> Privacidade
+                                </a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+
+            </ul>
+            </nav>
+    </div>
+    </div>
+    </footer>
     </div>
 </body>
 

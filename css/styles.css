@@ -1,68 +1,74 @@
-/* Folhas de estilo*/
+/* Folhas de estilo */
 
+/* Contêiner principal que engloba todo o conteúdo da página */
 #wrap {
-    position: relative;
-    height: 100%;
-    width: 100%;
-    padding: 0;
-    margin: 0;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 16px;
+    position: relative; /* Define a posição relativa para o contêiner */
+    height: 100%; /* Define a altura total do contêiner */
+    width: 100%; /* Define a largura total do contêiner */
+    padding: 0; /* Remove o preenchimento */
+    margin: 0; /* Remove a margem */
+    font-family: Arial, Helvetica, sans-serif; /* Define a fonte do texto */
+    font-size: 16px; /* Define o tamanho da fonte do texto */
 }
 
+/* Estilo para o cabeçalho do site */
 header {
-    display: flex;
-    color: rgb(47, 179, 255);
-    align-items: center;
-    background-color:rgb(12, 255, 12);
-    
-
+    display: flex; /* Define o layout flexível */
+    color: rgb(47, 179, 255); /* Define a cor do texto */
+    align-items: center; /* Alinha os itens ao centro verticalmente */
+    background-color: rgb(12, 255, 12); /* Define a cor de fundo */
 }
 
+/* Estilo para a imagem no cabeçalho */
 header img {
-
-    width: 64px;
-    display: block;
-    height: auto;
-    margin-right: 25px
-    
+    width: 64px; /* Define a largura da imagem */
+    display: block; /* Define a imagem como um bloco */
+    height: auto; /* Ajusta a altura automaticamente */
+    margin-right: 25px; /* Adiciona margem à direita */
 }
-header h1{
-flex-wrap: wrap;
 
+/* Estilo para o título no cabeçalho */
+header h1 {
+    flex-wrap: wrap; /* Permite que o conteúdo do título seja quebrado em múltiplas linhas, se necessário */
 }
+
+/* Estilo para o corpo da página */
 body {
- 
-    background: white;
-    background-size: cover;
-    background-attachment: fixed;
-    
+    background: white; /* Define a cor de fundo */
+    background-size: cover; /* Ajusta o tamanho do fundo para cobrir a área inteira */
+    background-attachment: fixed; /* Faz o fundo permanecer fixo ao rolar a página */
 }
 
-
- nav{
-    background: rgb(47, 179, 255);
-    display: flex;
+/* Estilo para a barra de navegação */
+nav {
+    background: rgb(47, 179, 255); /* Define a cor de fundo da navegação */
+    display: flex; /* Define o layout flexível */
     flex-direction: row; /* Alinha os itens horizontalmente */
-    align-items: center;
+    align-items: center; /* Alinha os itens ao centro verticalmente */
     justify-content: space-around; /* Distribui os itens */
-    padding: 1rem;
-    color: white;
-    margin-top: .5rem;
+    padding: 1rem; /* Adiciona preenchimento ao redor do conteúdo */
+    color: white; /* Define a cor do texto */
+    margin-top: .5rem; /* Adiciona margem superior */
 }
 
- nav a{
-    display: block; /* Mantém os itens de navegação alinhados corretamente */
-    padding: 1rem;
-    text-decoration: none;
-    color: white;
+/* Estilo para os links de navegação */
+nav a {
+    display: block; /* Define os links como blocos */
+    padding: 1rem; /* Adiciona preenchimento aos links */
+    text-decoration: none; /* Remove a decoração do texto (sublinhado) */
+    color: white; /* Define a cor do texto dos links */
 }
 
-
+/* Estilo para o rodapé do site */
 footer {
-    background: rgb(47, 179, 255);
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    color: #fff;
+    background: rgb(47, 179, 255); /* Define a cor de fundo do rodapé */
+    color: #fff; /* Define a cor do texto do rodapé */
+}
+
+/* Estilo para a rolo de fotos */
+#rolofoto {
+    width: 25%; /* Define a largura do rolo de fotos */
+    display: block; /* Define o rolo de fotos como um bloco */
+    margin-left: auto; /* Define a margem esquerda automática para centralizar */
+    margin-right: auto; /* Define a margem direita automática para centralizar */
 }

@@ -1,16 +1,12 @@
 /* Folhas de estilo */
-
-/* Contêiner principal que engloba todo o conteúdo da página */
-#wrap {
+html,body,#wrap {
     position: relative; /* Define a posição relativa para o contêiner */
     height: 100%; /* Define a altura total do contêiner */
-    width: 100%; /* Define a largura total do contêiner */
-    padding: 0; /* Remove o preenchimento */
-    margin: 0; /* Remove a margem */
-    font-family: Arial, Helvetica, sans-serif; /* Define a fonte do texto */
-    font-size: 16px; /* Define o tamanho da fonte do texto */
 }
+/* Contêiner principal que engloba todo o conteúdo da página */
 
+
+*/
 /* Estilo para o cabeçalho do site */
 header {
     display: flex; /* Define o layout flexível */
@@ -34,7 +30,7 @@ header h1 {
 
 /* Estilo para o corpo da página */
 body {
-    background: white; /* Define a cor de fundo */
+    background: black; /* Define a cor de fundo */
     background-size: cover; /* Ajusta o tamanho do fundo para cobrir a área inteira */
     background-attachment: fixed; /* Faz o fundo permanecer fixo ao rolar a página */
 }
@@ -71,4 +67,52 @@ footer {
     display: block; /* Define o rolo de fotos como um bloco */
     margin-left: auto; /* Define a margem esquerda automática para centralizar */
     margin-right: auto; /* Define a margem direita automática para centralizar */
+    border-radius: 12%;        
+}
+#formContato {
+  
+    display: table;
+    width: 100%;
+    max-width: 550px;
+    margin: auto;
+} 
+#formContato label {
+    display: block;
+    padding: .25rem .5rem;
+}
+#formContato input,
+#formContato textarea {
+
+    width: 100%;
+    background-color: rgb(247, 243, 243);
+    border: 1px solid red;
+    border-radius: .3rem;
+    border-bottom: 3px solid red;
+    padding: .5rem 1rem;
+}
+#formContato textarea {
+    height: 6rem;
+    resize: vertical;
+}
+#formContato button {
+    background-color: rgb(147, 147, 147);
+    color: #fff;
+    border: none;
+    border-radius: .3rem;
+    padding: .5rem 1rem;
+    pointer-events: none;
+    cursor: pointer;
+}
+#formContato input:valid,
+#formContato textarea:valid {
+    background-color: rgb(222, 255, 222);
+    border: 1px solid green;
+    border-bottom: 3px solid green;
+}
+
+/* Botão para o formulário válído */
+#formContato:valid button {
+    pointer-events: all; /* Habilita o clique no botão */
+    background-color: steelblue;
+    cursor: pointer;
 }

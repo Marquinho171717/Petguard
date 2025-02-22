@@ -8,6 +8,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Link para o arquivo de estilos CSS personalizado -->
     <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/cachorro.css">
     <!-- Favicon do site -->
     <link rel="shortcut icon" href="img/logoo.png">
     <!-- Link para a biblioteca de ícones FontAwesome -->
@@ -16,12 +17,12 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/css/bootstrap.min.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/js/bootstrap.bundle.min.js"></script>
     <!-- Título da página -->
-    <title>PetGuard Faça contato</title>
+    <title>PetGuard</title>
 </head>
 
 <body class="bg-cor ">
     <!-- Contêiner principal que engloba todo o conteúdo da página -->
-    <div id="wrap" class="d-flex flex-column ">
+    <div id="wrap">
         <!-- Cabeçalho do site -->
         <header>
             <!-- Link para a página inicial com a logo -->
@@ -74,62 +75,110 @@
             </div>
         </nav>
 
-        <main class="container flex-grow-1 d-flex">
-            <main class="container flex-grow-1 d-flex">
-                <div class="row flex-grow-1">
-                    <article class="col-12 col-md-9">
-                        <h2>Faça contato</h2>
-                        <p>Preencha todos os campos para entrar em contato com a equipe "Petite Guarda".</p>
-                        <form action="processa.html" method="get" id="formContato">
-                            <p>
-                                <label for="campoNome">Nome:</label>
-                                <input type="text" name="nome" id="campoNome" placeholder="Seu nome completo" minlength="3" required>
-                            </p>
-                            <p>
-                                <label for="campoEmail">E-mail:</label>
-                                <input type="email" name="email" id="campoEmail" placeholder="Um e-mail válido" required>
-                            </p>
-                            <p>
-                                <label for="campoAssunto">Assunto:</label>
-                                <input type="text" name="assunto" id="campoAssunto" placeholder="Assunto do contato" minlength="5" required>
-                            </p>
-                            <p>
-                                <label for="campoMensagem">Mensagem:</label>
-                                <textarea name="mensagem" id="campoMensagem" placeholder="Mensagem do contato" minlength="5" required></textarea>
-                            </p>
-                            <p>
-                                <button type="submit">Enviar</button>
-                                <!-- small>&larr; Clique somente uma vez.</small -->
-                            </p>
-                        </form>
-                    </article>
-                    <aside class="col-12 col-md-3 p-3">
-                        <h2>Entre em contato!</h2>
-                        <div class="row">
-                            <!-- Menu com nossas redes sociais -->
-                            <nav class="col-md-12 text-bg-info">
-                                <ul class="list-inline">
-                                    <li class="list-inline-item"><a href="https://facebook.com/petiteguarda" target="_blank">
-                                        <i class="fa-brands fa-square-facebook"></i> Facebook
-                                    </a></li>
-                                    <li class="list-inline-item"><a href="https://instagram.com/petiteguarda" target="_blank">
-                                        <i class="fa-brands fa-square-instagram"></i> Instagram
-                                    </a></li>
-                                    <li class="list-inline-item"><a href="https://youtube.com/petiteguarda" target="_blank">
-                                        <i class="fa-brands fa-square-youtube"></i> YouTube
-                                    </a></li>
-                                    <li class="list-inline-item"><a href="https://ws.com/petiteguarda" target="_blank">
-                                        <i class="fa-brands fa-square-whatsapp"></i> WhatsApp
-                                    </a></li>
-                                </ul>
-                            </nav>
-                        </div>
-                    </aside>
+        <main id="main_div">
+            <h1>Produtos para Gato</h1>
+
+            <h2>Ração para Gato</h2>
+            <div class="container">
+                <div class="produto">
+                    <img src="img/gato/raçao-gato1.png" alt="Ração 1">
+                    <h2>Ração 1</h2>
+                    <p>R$79,90</p>
+
                 </div>
-            </main>
-            
+                <div class="produto">
+                    <img src="img/gato/raçao-gato2.png" alt="Ração 2">
+                    <h2>Ração 2</h2>
+                    <p>R$89,90</p>
+                </div>
+                <div class="produto">
+                    <img src="img/gato/raçao-gato3.png" alt="Ração 3">
+                    <h2>Ração 3</h2>
+                    <p>R$99,90</p>
+                </div>
+                <div class="produto">
+                    <img src="img/gato/raçao-gato4.png" alt="Ração 4">
+                    <h2>Ração 4</h2>
+                    <p>R$109,90</p>
+                </div>
+
+            </div>
+
+            <h2>Coleira para Gato</h2>
+            <div class="container">
+                <div class="produto">
+                    <img src="img/gato/coleira-gato1.png" alt="Coleira 1">
+                    <h2>Coleira 1</h2>
+                    <p>R$19,90</p>
+                </div>
+                <div class="produto">
+                    <img src="img/gato/coleira-gato2.png" alt="Coleira 2">
+                    <h2>Coleira 2</h2>
+                    <p>R$29,90</p>
+                </div>
+                <div class="produto">
+                    <img src="img/gato/coliera-gato3.png" alt="Coleira 3">
+                    <h2>Coleira 3</h2>
+                    <p>R$39,90</p>
+                </div>
+                <div class="produto">
+                    <img src="img/gato/coliera-gato4.png" alt="Coleira 4">
+                    <h2>Coleira 4</h2>
+                    <p>R$49,90</p>
+                </div>
+
+            </div>
+            <h2>Brinquedos para Gato</h2>
+            <div class="container">
+                <div class="produto">
+                    <img src="img/gato/brinquedo-gato1.png" alt="Brinquedos 1">
+                    <h2>Brinquedo 1</h2>
+                    <p>R$19,90</p>
+                </div>
+                <div class="produto">
+                    <img src="img/gato/brinquedo-gato2.png" alt="Brinquedos 2">
+                    <h2>Brinquedo 2</h2>
+                    <p>R$29,90</p>
+                </div>
+                <div class="produto">
+                    <img src="img/gato/brinquedo-gato3.png" alt="Brinquedos 3">
+                    <h2>Brinquedo 3</h2>
+                    <p>R$39,90</p>
+                </div>
+                <div class="produto">
+                    <img src="img/gato/brinquedo-gato4.png" alt="Brinquedos 4">
+                    <h2>Brinquedo 4</h2>
+                    <p>R$49,90</p>
+                </div>
+
+            </div>
+
+            <h2>Caminhas para Gato</h2>
+            <div class="container">
+                <div class="produto">
+                    <img src="img/gato/cama-gato1.png" alt="caminha 1">
+                    <h2>Cama 1</h2>
+                    <p>R$19,90</p>
+                </div>
+                <div class="produto">
+                    <img src="img/gato/cama-gato2.png" alt="caminha 2">
+                    <h2>Cama 2</h2>
+                    <p>R$29,90</p>
+                </div>
+                <div class="produto">
+                    <img src="img/gato/brinquedo-gato3.png" alt="caminha 3">
+                    <h2>Cama 3</h2>
+                    <p>R$39,90</p>
+                </div>
+                <div class="produto">
+                    <img src="img/gato/brinquedo-gato4.png" alt="caminha 4">
+                    <h2>Cama 4</h2>
+                    <p>R$49,90</p>
+                </div>
+
+            </div>
+
         </main>
-        
 
         <!-- Rodapé do site -->
         <footer class="text-bg-info">
@@ -191,5 +240,6 @@
     </footer>
     </div>
 </body>
+<script src="js/cachorro.js"></script>
 
 </html>

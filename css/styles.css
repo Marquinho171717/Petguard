@@ -5,7 +5,6 @@ html,body,#wrap {
 }
 /* Contêiner principal que engloba todo o conteúdo da página */
 
-
 */
 /* Estilo para o cabeçalho do site */
 header {
@@ -30,14 +29,14 @@ header h1 {
 
 /* Estilo para o corpo da página */
 body {
-    background: black; /* Define a cor de fundo */
+    background-color: rgb(238, 11, 11); /* Define a cor de fundo */
     background-size: cover; /* Ajusta o tamanho do fundo para cobrir a área inteira */
     background-attachment: fixed; /* Faz o fundo permanecer fixo ao rolar a página */
 }
 
 /* Estilo para a barra de navegação */
 nav {
-    background: rgb(47, 179, 255); /* Define a cor de fundo da navegação */
+    background-color: rgb(47, 179, 255); /* Define a cor de fundo da navegação */
     display: flex; /* Define o layout flexível */
     flex-direction: row; /* Alinha os itens horizontalmente */
     align-items: center; /* Alinha os itens ao centro verticalmente */
@@ -63,11 +62,11 @@ footer {
 
 /* Estilo para a rolo de fotos */
 #rolofoto {
-    width: 25%; /* Define a largura do rolo de fotos */
+    width: 45%; /* Define a largura do rolo de fotos */
     display: block; /* Define o rolo de fotos como um bloco */
     margin-left: auto; /* Define a margem esquerda automática para centralizar */
     margin-right: auto; /* Define a margem direita automática para centralizar */
-    border-radius: 12%;        
+    border-radius: 15%;        
 }
 #formContato {
   
@@ -85,9 +84,9 @@ footer {
 
     width: 100%;
     background-color: rgb(247, 243, 243);
-    border: 1px solid red;
+    border: 1px solid rgb(19, 142, 243);
     border-radius: .3rem;
-    border-bottom: 3px solid red;
+    border-bottom: 3px solid rgb(19, 142, 243);
     padding: .5rem 1rem;
 }
 #formContato textarea {
@@ -116,3 +115,17 @@ footer {
     background-color: steelblue;
     cursor: pointer;
 }
+ .bg-cor{
+    background: linear-gradient(90deg,rgb(154, 148, 245),rgb(143, 238, 255),rgb(77, 163, 243));
+ }
+
+ #wrap{
+    position: relative;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+ }
+
+ main{
+    flex-grow: 1;
+ }

@@ -16,12 +16,12 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/css/bootstrap.min.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/js/bootstrap.bundle.min.js"></script>
     <!-- Título da página -->
-    <title>PetGuard Faça contato</title>
+    <title>PetGuard</title>
 </head>
 
 <body class="bg-cor ">
     <!-- Contêiner principal que engloba todo o conteúdo da página -->
-    <div id="wrap" class="d-flex flex-column ">
+    <div id="wrap">
         <!-- Cabeçalho do site -->
         <header>
             <!-- Link para a página inicial com a logo -->
@@ -66,6 +66,7 @@
                                 <li><a class="dropdown-item" href="#">FISIOTERAPIA</a></li>
                                 <li><a class="dropdown-item" href="#">HOSPEDAGEM</a></li>
                                 <li><a class="dropdown-item" href="contatos.html">CONTATOS</a></li>
+                                <li><a class="dropdown-item" href="contatos.html">CONTATOS</a></li>
                                 <li><a class="dropdown-item" href="cadastro.html">CADASTRO</a></li>
                             </ul>
                         </li>
@@ -75,61 +76,41 @@
         </nav>
 
         <main class="container flex-grow-1 d-flex">
-            <main class="container flex-grow-1 d-flex">
-                <div class="row flex-grow-1">
-                    <article class="col-12 col-md-9">
-                        <h2>Faça contato</h2>
-                        <p>Preencha todos os campos para entrar em contato com a equipe "Petite Guarda".</p>
-                        <form action="processa.html" method="get" id="formContato">
-                            <p>
-                                <label for="campoNome">Nome:</label>
-                                <input type="text" name="nome" id="campoNome" placeholder="Seu nome completo" minlength="3" required>
-                            </p>
-                            <p>
-                                <label for="campoEmail">E-mail:</label>
-                                <input type="email" name="email" id="campoEmail" placeholder="Um e-mail válido" required>
-                            </p>
-                            <p>
-                                <label for="campoAssunto">Assunto:</label>
-                                <input type="text" name="assunto" id="campoAssunto" placeholder="Assunto do contato" minlength="5" required>
-                            </p>
-                            <p>
-                                <label for="campoMensagem">Mensagem:</label>
-                                <textarea name="mensagem" id="campoMensagem" placeholder="Mensagem do contato" minlength="5" required></textarea>
-                            </p>
-                            <p>
-                                <button type="submit">Enviar</button>
-                                <!-- small>&larr; Clique somente uma vez.</small -->
-                            </p>
-                        </form>
-                    </article>
-                    <aside class="col-12 col-md-3 p-3">
-                        <h2>Entre em contato!</h2>
-                        <div class="row">
-                            <!-- Menu com nossas redes sociais -->
-                            <nav class="col-md-12 text-bg-info">
-                                <ul class="list-inline">
-                                    <li class="list-inline-item"><a href="https://facebook.com/petiteguarda" target="_blank">
+            <div class="row d-flex flex-grow-1">
+                <article class="col-12 col-md-9 flex-grow-1 p-3">
+                    <h2>Seu Cadastro Foi Concluido</h2>
+                    <p>Oba!</p>
+                    <p>Seu Cadastro foi enviado com sucesso...</p>
+                    <p><em>Obrigado.</em></p>
+                </article>
+
+                <aside class="col-12 col-md-3 p-3">
+                    <h2>Entre em contato !</h2>
+                    <div class="row">
+                        <!-- Menu com nossas redes sociais -->
+                        <nav class="col-md-6 text-bg-info">
+                            <ul class="list-inline">
+                                <li class="list-inline-item"><a href="https://facebook.com/petiteguarda"
+                                        target="_blank">
                                         <i class="fa-brands fa-square-facebook"></i> Facebook
                                     </a></li>
-                                    <li class="list-inline-item"><a href="https://instagram.com/petiteguarda" target="_blank">
+                                <li class="list-inline-item"><a href="https://instagram.com/petiteguarda"
+                                        target="_blank">
                                         <i class="fa-brands fa-square-instagram"></i> Instagram
                                     </a></li>
-                                    <li class="list-inline-item"><a href="https://youtube.com/petiteguarda" target="_blank">
-                                        <i class="fa-brands fa-square-youtube"></i> YouTube
+                                <li class="list-inline-item"><a href="https://youtube.com/petiteguarda" target="_blank">
+                                        <i class="fa-brands fa-square-youtube"></i> Youtube
                                     </a></li>
-                                    <li class="list-inline-item"><a href="https://ws.com/petiteguarda" target="_blank">
-                                        <i class="fa-brands fa-square-whatsapp"></i> WhatsApp
+                                <li class="list-inline-item"><a href="https://ws.com/petiteguarda" target="_blank">
+                                        <i class="fa-brands fa-square-whatsapp"></i> Whatsapp
                                     </a></li>
-                                </ul>
-                            </nav>
-                        </div>
-                    </aside>
-                </div>
-            </main>
-            
+                            </ul>
+                        </nav>
+                    </div>
+                </aside>
+
+            </div>
         </main>
-        
 
         <!-- Rodapé do site -->
         <footer class="text-bg-info">
